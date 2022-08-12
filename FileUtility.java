@@ -14,7 +14,7 @@ public class FileUtility {
         write_into_file(filename, text, true);
     }
 
-    public static String read_and_write_file(String filename) throws Exception {
+    public static String read_file(String filename) throws Exception {
         InputStream in = new FileInputStream(filename);
         InputStreamReader out = new InputStreamReader(in);
         BufferedReader reader = new BufferedReader(out);
